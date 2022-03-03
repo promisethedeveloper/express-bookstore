@@ -1,0 +1,97 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"isbn": "67583853",
+			"amazon_url": "https://amazon-sample.com",
+			"author": "Jacklyn Maketu",
+			"language": "english",
+			"pages": 300,
+			"publisher": "Get better publisher",
+			"title": "Live is good",
+			"year": 2020
+		}
+	],
+	"required": [
+		"isbn",
+		"amazon_url",
+		"author",
+		"language",
+		"pages",
+		"publisher",
+		"title",
+		"year"
+	],
+	"properties": {
+		"isbn": {
+			"$id": "#/properties/isbn",
+			"type": "string",
+			"title": "The isbn schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": ["67583853"]
+		},
+		"amazon_url": {
+			"$id": "#/properties/amazon_url",
+			"type": "string",
+			"title": "The amazon_url schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": ["https://amazon-sample.com"]
+		},
+		"author": {
+			"$id": "#/properties/author",
+			"type": "string",
+			"title": "The author schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": ["Jacklyn Maketu"]
+		},
+		"language": {
+			"$id": "#/properties/language",
+			"type": "string",
+			"title": "The language schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": ["english"]
+		},
+		"pages": {
+			"$id": "#/properties/pages",
+			"type": "integer",
+			"title": "The pages schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0,
+			"examples": [300]
+		},
+		"publisher": {
+			"$id": "#/properties/publisher",
+			"type": "string",
+			"title": "The publisher schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": ["Get better publisher"]
+		},
+		"title": {
+			"$id": "#/properties/title",
+			"type": "string",
+			"title": "The title schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": ["Live is good"]
+		},
+		"year": {
+			"$id": "#/properties/year",
+			"type": "integer",
+			"title": "The year schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0,
+			"examples": [2020]
+		}
+	},
+	"additionalProperties": true
+}
